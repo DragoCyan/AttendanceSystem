@@ -3,7 +3,7 @@ faceCascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_defaul
 eyeCascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smileCascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0) # set to 1 for DroidCam Client
 
 while True:
     ret, frame = cap.read()

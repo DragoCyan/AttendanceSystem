@@ -1,7 +1,7 @@
 import cv2
 faceCascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml') #pre-trained cascade model
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0) # set to 1 for DroidCam Client
 
 while True:
     ret, frame = cap.read()
